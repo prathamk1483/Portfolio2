@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Cursor Example</title>
+<style>
+    /* Additional styling for the page */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        color: #666;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Cursor Example</h1>
+        <p>This is an example of using a custom cursor on a website.</p>
+    </div>
+
+    <script>
+        // Function to set custom cursor
+        function setCustomCursor() {
+            var cursorImgUrl = 'static/assets/pointer.png';
+            var container = document.querySelector('.container');
+            container.style.cursor = "url('" + cursorImgUrl + "'), auto";
+        }
+
+        // Call the function to set custom cursor when the page loads
+        window.onload = function() {
+            setCustomCursor();
+        };
+    </script>
+</body>
+</html>
+```
+
