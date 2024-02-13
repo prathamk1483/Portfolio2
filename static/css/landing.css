@@ -123,3 +123,36 @@ nav > .right :hover{
     text-align: end;
     white-space: nowrap;
 }
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background: transparent;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    border:2px solid white;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+  }
+  .show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 5.5s; 
+  }
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
