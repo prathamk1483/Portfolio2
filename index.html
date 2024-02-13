@@ -83,7 +83,21 @@
 </div> <!--This is end of PAPA div -->
 
 
+<div id="toast" class="toast"></div>
 
+<script>
+  // JavaScript to show toast message
+  document.addEventListener('DOMContentLoaded', function() {
+    var toast = document.getElementById('toast');
+    setTimeout(function(){
+      toast.textContent = "The website is still under construction, please access using a PC";
+      toast.classList.add('show');
+    }, 2000);
+    setTimeout(function(){
+      toast.classList.remove('show');
+    }, 8000);
+  });
+</script>
 
   <script type="module" src="static/js/background.js"></script>
   <script src="static/js/showbackground.js"> </script>
